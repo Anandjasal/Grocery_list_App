@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
+    app:cardBackgroundColor="#ED0909"
     app:cardCornerRadius="20dp"
     app:cardElevation="15dp"
     app:cardMaxElevation="15dp">
@@ -41,13 +42,13 @@
                 style="@style/TextInputEditTextTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:startIconDrawable="@drawable/ic_cart"
                 android:layout_margin="5dp"
                 android:hint="Enter Item name"
                 android:padding="5dp"
-                app:boxBackgroundMode="filled"
                 android:textColorHint="@color/blue_shade_2"
-                app:hintTextColor="@color/blue_shade_2">
+                app:boxBackgroundMode="filled"
+                app:hintTextColor="@color/blue_shade_2"
+                app:startIconDrawable="@drawable/ic_cart">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/idEdtItemName"
@@ -67,10 +68,10 @@
                 android:layout_margin="5dp"
                 android:hint="Enter Item Quantity"
                 android:padding="5dp"
-                app:boxBackgroundMode="filled"
                 android:textColorHint="@color/white"
-                app:startIconDrawable="@drawable/ic_money"
-                app:hintTextColor="@color/white">
+                app:boxBackgroundMode="filled"
+                app:hintTextColor="@color/white"
+                app:startIconDrawable="@drawable/ic_money">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/idEdtItemQuantity"
@@ -89,11 +90,11 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:hint="Enter Item price"
-                app:boxBackgroundMode="filled"
                 android:padding="5dp"
-                app:startIconDrawable="@drawable/ic_money"
                 android:textColorHint="@color/white"
-                app:hintTextColor="@color/white">
+                app:boxBackgroundMode="filled"
+                app:hintTextColor="@color/white"
+                app:startIconDrawable="@drawable/ic_money">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/idEdtItemPrice"
@@ -109,8 +110,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/blue_shade_2"
                 android:layout_margin="5dp"
+                android:background="@color/blue_shade_2"
                 android:orientation="horizontal"
                 android:weightSum="2">
 
@@ -122,7 +123,9 @@
                     android:layout_weight="1"
                     android:background="@drawable/custom_button_back"
                     android:text="Cancel"
-                    android:textAllCaps="false" />
+                    android:textAllCaps="false"
+                    android:textColor="#FF0000"
+                    android:textColorHighlight="@color/btnn" />
 
                 <Button
                     android:id="@+id/idBtnAdd"
@@ -132,7 +135,9 @@
                     android:layout_weight="1"
                     android:background="@drawable/custom_button_back"
                     android:text="Add"
-                    android:textAllCaps="false" />
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textColorHighlight="@android:color/holo_orange_light" />
 
 
             </LinearLayout>
